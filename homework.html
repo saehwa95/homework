@@ -8,14 +8,14 @@
     </head>
     <script>
         function done() {
-            return alert('제출 완료!')
+                return alert('제출 완료!')
         }
     </script>
     <body>
-        <form>
+        <form action="" onsubmit="done();">
             <label for="first">First name:</label>
             <div>
-                <input type="text" id="first" name="first" required>
+                <input type="text" id="first" name="first" required="required">
             </div>
             <label for="last">Last name:</label>
             <div>
@@ -34,11 +34,11 @@
             </div>
             <div>
                 <label for="favorite">Favorite:</label>
-                <input type="checkbox" id="html" name="html" value="html">
+                <input type="checkbox" id="html" name="html" value="html" />
                 <label for="html">HTML</label>
-                <input type="checkbox" id="java" name="java" value="java">
+                <input type="checkbox" id="java" name="java" value="java" />
                 <label for="java">JAVA</label>
-                <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                <input type="checkbox" id="javascript" name="javascript" value="javascript" />
                 <label for="javascript">JavaScript</label>
             </div>
             <div>
@@ -51,9 +51,9 @@
             </div>
             <div>
                 <label for="birthday">Birthday:</label>
-                <input type="date" id="start" name="start">
+                <input type="date" id="start" name="start" />
             </div>
-            <button type="submit" onclick="done()">제출</button>
+            <button>제출</button>
         </form>
     </body>
 
