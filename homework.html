@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>항해99 10기 D반 장세화</title>
-</head>
-<body>
-  
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>항해99 10기 D반 장세화</title>
+    </head>
+    <script>
+      function done() {
+        alert('제출 완료!')
+      }
+    </script>
+    <body>
+        <form>
+            <label for="first">First name:</label>
+            <div>
+                <input type="text" id="first" name="first" required="required"/>
+            </div>
+            <label for="last">Last name:</label>
+            <div>
+                <input type="text" id="last" name="last" required="required"/>
+            </div>
+            <label for="email">Email:</label>
+            <div>
+                <input type="text" id="first" name="first" required="required"/>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <label for="favorite">Favorite:</label>
+                <input type="checkbox" id="html" name="html" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="java" name="java" value="java">
+                <label for="java">JAVA</label>
+                <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <div>
+                <label for="browser">Browser:</label>
+                <select>
+                    <option>크롬</option>
+                    <option>웨일</option>
+                    <option>엣지</option>
+                </select>
+            </div>
+            <div>
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="start" name="start">
+            </div>
+            <button type="submit" onclick="done()">제출</button>
+        </form>
+    </body>
 </html>
